@@ -158,10 +158,37 @@ default:
 
 //: ## Functions
 //: A function in Swift is nothing more than a collection of instructions that accomplish some task. The advantage to grouping the instructions into a function is that the function can then be called whenever that task should be performed, rather than having to list out those instrutions a second, third, or nth time.
+func averageScore(_ scores: [Int]) -> Int {
+    var totalScore = 0
+    for score in scores {
+        totalScore += score
+    }
+    
+    return totalScore / scores.count
+}
 
-
-
+let avg = averageScore(scores)
 //: ## Tuples
 //: Tuples are a lightweight way of grouping related values into a single compound value.
 
+let carrots = (name: "carrots", aisle: 4, category: "produce", count: 25)
+let soup = (name: "tomato soup", aisle: 6, category: "canned goods", count: 100)
+let cereal = (name: "Frosted Flakes", aisle: 2, category: "cereals", count: 43)
+let pringles = (name: "Pringles", aisle: 7, category: "chips", count: 15)
+let tostitos = (name: "Tostitos", aisle: 7, category: "chips", count: 26)
+let seafood = (name: "crab legs", aisle: 1, category: "seafood", count: 8)
+let rice = (name: "Minute Rice", aisle: 2, category: "dry rice and beans", count: 62)
+let turkey = (name: "Boar's Head turkey", aisle: 9, category: "deli", count: 4)
 
+let groceries = [carrots, soup, cereal, pringles, tostitos, seafood, rice, turkey]
+
+func determineTotalCount() -> Int {
+    var totalCount = 0
+    for anItem in groceries {
+        totalCount += anItem.count
+    }
+    
+    return totalCount
+}
+
+print("Total count of all grocery items: \(determineTotalCount())")
