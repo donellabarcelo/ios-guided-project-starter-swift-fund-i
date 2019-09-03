@@ -38,18 +38,27 @@ totalPeople = 4
 
 //: ## Type Inference and Explicit Typing
 //: All containers in Swift must have a type set on them. The containers we've seen so far had their types set implicitly. This is called _type inference_. Meaning the kind of object stored in the container was determined by looking at what kind of value was assigned to the container.
+let ios = "Apple's mobile operating system"
 
 
 
 //: In the line above, the constant `ios` stores a value "Apple's mobile operating system". This value is a `String`, so the data type of `ios` is `String`. The type was _inferred_ by the value provided.
 //: Another way to type a container is to set it explicitly. See some examples of this below.
 
+let price: Double = 1299.99
+let onSale: Bool = true
+let modelName: String = "Macbook Pro"
+let discountQty: Int = 15
 
+if onSale {
+    print("\(modelName) on sale for \(price)!")
+}
 
 //: ## Type Safety
 //: Once a container's data type is set, it cannot hold a value of any other type
 
-
+var life = 42
+life = 12
 
 //: ## Type Coercion
 //: Types are never automatically converted into another type.
