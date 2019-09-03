@@ -51,7 +51,7 @@ let modelName: String = "Macbook Pro"
 let discountQty: Int = 15
 
 if onSale {
-    print("\(modelName) on sale for \(price)!")
+    print("\(modelName) on sale for $\(price)!")
 }
 
 //: ## Type Safety
@@ -63,16 +63,19 @@ life = 12
 //: ## Type Coercion
 //: Types are never automatically converted into another type.
 
+let label = "The width is "
+let width = 94
 
+let widthLabel = label + String(width)
+print(widthLabel)
 
 //: ## String Interpolation and Concatenation
 //: Using the `+` operator with two strings is called _string concatentation_. One string is appended to the end of another.
-
-
+let heightLabel = "the height is " + "100"
 
 //: The below example shows the _string interpolation_ characters (`\()`). These allow a `String` (or non-string) value to be placed in-line inside a larger `String` literal value. If the value is not already a `String`, it will be converted.
 
-
+let anotherWidthLabel = "The width is \(width)"
 
 //: ## Collections
 //: ### Arrays
