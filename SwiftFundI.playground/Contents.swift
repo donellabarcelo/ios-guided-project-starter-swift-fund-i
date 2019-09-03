@@ -2,6 +2,8 @@
 //: ## Hello, World!
 //: As tradition dictates, any exploration of a new language needs to start with "hello, world"
 
+let helloString = "Hello, World!"
+print(helloString)
 
 
 //: ## Comments
