@@ -19,15 +19,21 @@ print(helloString)
 //: ## Identifiers
 //: first character A-Z or a-z or _, followed by any of these plus 0-9
 
+let lambdaSchool = "awesome", ls100 = "100%", _travelBack = "1985"
 
 
 //: ## Mutability
 //: There are two kinds of containers that hold values in Swift. One kind is called a constant, because once a value has been set, it cannot change for the lifetime of that container. Constants are declared with the `let` keyword.
+// constants and variables
 
+let students = 30
+let staff = 4
+
+var totalPeople = students + staff
 
 
 //: Variables are declared with the 'var' keyword
-
+totalPeople = 4
 
 
 //: ## Type Inference and Explicit Typing
