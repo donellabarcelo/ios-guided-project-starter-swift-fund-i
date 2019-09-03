@@ -115,11 +115,45 @@ print(occupations)
 //: ### `for`
 //: `for` loops allow for iterating over a collection of elements (usually an array), examining each element in turn.
 
+let scores = [75, 43, 103, 87, 12, 78, 85]
+var passingStudents = 0
 
+for score in scores {
+    if score > 70 {
+        passingStudents += 1
+    }
+}
 
+// At run time there are 3 passing students
+print("\(passingStudents) students scored a passing grade of 70 or higher.")
 //: ### `switch`
 //: `switch` statements are useful when a multiple-choice path is possible for your code, and you want to choose a single path at runtime, based on some criteria.
 
+let number = 6
+switch number
+{
+case 1:
+    print("Got 1")
+case 2:
+    print("Got 2")
+case 3, 4, 5:
+    print("Got 3 or 4 or 5")
+case 6...22:
+    print("Got 6 to 22")
+default:
+    print("Got Default")
+}
+
+let furniture = "Chair"
+switch furniture
+{
+case "Table":
+    print("Got Table")
+case "Chair", "Stool", "Bench":
+    print("Got Something to sit on")
+default:
+    print("Default")
+}
 
 
 //: ## Functions
