@@ -81,20 +81,35 @@ let anotherWidthLabel = "The width is \(width)"
 //: ### Arrays
 //: A Swift array is a collection of like objects, and they are stored in the order they are added. Accessing a particular element is done by using its index value (which starts at 0).
 
+let shipCaptains = ["Malcom Reynolds", "Jean-Luc Picard", "James T. Kirk", "Han Solo"]
+let sameCaptains = ["Malcom Reynolds", "Jean-Luc Picard", "James T. Kirk", "Han Solo"]
+let differentCaptains = ["Kathryn Janeway", "Poe Dameron"]
 
-
+print(differentCaptains[0])
 //: Array equality is determined by looking at each element. If all elements are the same, and in the same order, the two arrays are equal.
 
-
+if shipCaptains == sameCaptains {
+    print("Arrays are equal.")
+} else {
+    print("Arrays are not equal.")
+}
 
 //: Since `shipCaptains` was declared as a constant, we must convert it to a mutable array before we can add entries.
 
+var moreCaptains = shipCaptains
+moreCaptains.append("Kathryn Janeway")
+moreCaptains[1] =  "Poe Dameron"
+moreCaptains.insert("Jean-Luc Picard", at: 2)
 
+print(moreCaptains)
 
 //: ### Dictionaries
 //: A Swift dictionary is similar to an array in that is a collection, but the itesm are stored in no particular order. To access an item, its associated key is provided. Dictionaries are also called "key-value" stores. The key has a type, and the value can have the same or a different type.
 
-
+var occupations = ["Malcom": "Captain", "Kaylee": "Mechanic"]
+occupations["Malcom"]
+occupations["Jayne"] = "Public Relations"
+print(occupations)
 
 //: ## Looping
 //: ### `for`
