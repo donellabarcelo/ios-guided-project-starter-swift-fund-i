@@ -34,18 +34,20 @@ let iOS11 = "Best cohort", ls300 = "100%", _travelBack1 = "1995"
 
 let students = 30
 let staff = 4
-
 var totalPeople = students + staff
 
-
-//: Variables are declared with the 'var' keyword
 totalPeople = 4
+//: Variables are declared with the 'var' keyword
+var appleCount = 10
+appleCount += 15
+print(appleCount)
 
 
 //: ## Type Inference and Explicit Typing
 //: All containers in Swift must have a type set on them. The containers we've seen so far had their types set implicitly. This is called _type inference_. Meaning the kind of object stored in the container was determined by looking at what kind of value was assigned to the container.
 let ios = "Apple's mobile operating system"
 
+let xcode = "Software Developer Kit for Apple's operating systems"
 
 
 //: In the line above, the constant `ios` stores a value "Apple's mobile operating system". This value is a `String`, so the data type of `ios` is `String`. The type was _inferred_ by the value provided.
@@ -59,6 +61,12 @@ let discountQty: Int = 15
 if onSale {
     print("\(modelName) on sale for $\(price)!")
 }
+
+
+let price2: Double = 1499
+let tax: Double = 53.25
+let total = price2 + tax
+
 
 //: ## Type Safety
 //: Once a container's data type is set, it cannot hold a value of any other type
