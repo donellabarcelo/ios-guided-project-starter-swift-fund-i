@@ -5,6 +5,9 @@
 let helloString = "Hello, World!"
 print(helloString)
 
+let helloString1 = "Hello, World 2.0!"
+print(helloString1)
+
 
 //: ## Comments
 //: A comment is text that is ignored by the compiler. So it can be plain text, or even code. If it formatted like the examples below, it will be completely ignored when the project is built. Comments are notes to yourself or others about how a given block of code functions.
@@ -16,12 +19,15 @@ print(helloString)
  * /* and */ characters
  */
 
+/* This is my final go around at lambda school.
+ ios11 is the best cohort yet!
+ */
 //: ## Identifiers
 //: first character A-Z or a-z or _, followed by any of these plus 0-9
 
 let lambdaSchool = "awesome", ls100 = "100%", _travelBack = "1985"
 
-
+let iOS11 = "Best cohort", ls300 = "100%", _travelBack1 = "1995"
 //: ## Mutability
 //: There are two kinds of containers that hold values in Swift. One kind is called a constant, because once a value has been set, it cannot change for the lifetime of that container. Constants are declared with the `let` keyword.
 // constants and variables
